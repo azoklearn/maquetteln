@@ -8,12 +8,15 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "overrides": {
+    "three-mesh-bvh": "0.8.0"
+  },
   "dependencies": {
     "@react-three/drei": "^9.117.3",
     "@react-three/fiber": "^8.17.10",
     "d3-geo": "^3.1.1",
     "framer-motion": "^11.11.17",
-    "next": "14.2.18",
+    "next": "14.2.35",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "three": "^0.169.0",
