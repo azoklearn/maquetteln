@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black: #0a0a0a;
+  --black-soft: #111111;
+  --gold: #c9a962;
+  --gold-light: #e5d4a1;
+  --gold-dark: #9a7b3a;
+  --gold-muted: rgba(201, 169, 98, 0.4);
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--black);
+  color: #fafafa;
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+/* Luxury selection */
+::selection {
+  background: var(--gold-muted);
+  color: var(--gold-light);
+}
+
+/* Smooth scroll container for full-page feel */
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+/* Gold gradient text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--gold-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Subtle gold border glow */
+.border-gold-glow {
+  box-shadow: 0 0 20px var(--gold-muted);
+}
+
+/* Premium focus ring */
+*:focus-visible {
+  outline: 1px solid var(--gold);
+  outline-offset: 2px;
+}
